@@ -1,4 +1,8 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 /*target specific ID names with #, use . to target class names-*/
 #content {
     max-width: 1600px;
@@ -7,20 +11,28 @@
 
 body {
     background-color: #E0FBFC; 
+    font-family: Overpass, Helvetica, sans-serif; /* quotes around multi-word fonts*/
+    font-size: 22px; /* applies to basically all text */
+    margin: 0; /*removes all edge filler, we'll customize it by section later*/
+    padding: 0;
 }
 
 header {
     background-color: #EE6C4D;
+    font-family: Antonio, Georgia, serif;
 }
 
 .home-title {
     color: #E0FBFC;
+    font-size: 2em; /* 2 units smaller than default */
+    margin-top: 10px;
 }
 
 nav a {
     text-align: center;
     color: #E0FBFC;
     text-decoration: none;
+    padding:35px;
 }
 nav a:hover {
     background-color: #98C1D9;
@@ -40,6 +52,10 @@ h4 {
     background-color: #3D5A80;
     color: #E0FBFC;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px; /* top-bottom, left-right */ /* problem, the button's edge still peaks through*/
+    margin-top: 50px;
+    border-radius: 5px; /*curves the corners */
 }
 
 .book:hover, .join:hover {
@@ -55,24 +71,50 @@ h4 {
     text-align: center;
 }
 
-.msg {
+.rivers-card, .camping-card, .rapids-card {
+    margin:200px 0;
+}
+
+.card-img {
+    border: 10px solid #000000;
+}
+
+.message {
     background-color: #E0FBFC;
+    line-height: 1.5em;
+    padding:  35px;
 }
 
-.msg h2{
-    color: #E0FBFC;
+/* ad libbed, be prepared to modify */
+.mountains {
+    padding:30px 0px 50px 0px; /*top right bottom left*/
 }
 
-.msg p {
-    color: #E0FBFC;
+h2{
+    margin:0;
+}
+
+.message h2{
+    color: #3D5A80;
+}
+
+.message p {
+    color: #3D5A80;
+    font-size:.8em;
+    padding-bottom: 15px;
 }
 
 .logo {
     width: 80px;
 }
 
+#logo_link {
+    padding-top: 35px;
+}
+
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
@@ -83,6 +125,10 @@ main section {
     text-align: center;
 }
 
+main section img { /* applies to all images within any "sections" of "main" */
+    box-sizing: border-box; /* the border now gets included in the size of the image */
+}
+
 #background { 
     height: 725px; 
     background-color: #98C1D9;
@@ -91,6 +137,8 @@ main section {
 footer {
     background-color: #EE6C4D;
     color: #E0FBFC;
+    padding: 25px 50px;
+    margin-top: 200px
 }
 
 footer a {
@@ -107,5 +155,9 @@ footer p{
 
 footer p:hover {
     text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
                 
