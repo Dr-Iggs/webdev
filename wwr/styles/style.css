@@ -55,16 +55,13 @@ h4 {
     font-size: 18px;
     padding: 15px 30px; /* top-bottom, left-right */ /* problem, the button's edge still peaks through*/
     margin-top: 50px;
+
     border-radius: 5px; /*curves the corners */
 }
 
 .book:hover, .join:hover {
     background-color: #EE6C4D;
     color: #E0FBFC;
-}
-
-.button-box {
-    text-align: center;
 }
 
 #contact-buttons {
