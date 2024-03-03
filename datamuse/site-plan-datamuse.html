@@ -89,8 +89,8 @@
       <!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. --> 
       <nav>
         <a href="#">Home</a>
-        <a href="#">Page2</a>
-        <a href="#">Page3</a>
+        <a href="#">The Music</a>
+        <a href="#">About Data Sonification</a>
       </nav>
       <hr>
       <h2>
@@ -126,25 +126,65 @@
       </h2>
       <h3>Home page</h3>
       <p>
-        [Written copy for the home page here]
+        We’ve consolidated the entire day’s sales at a couple grocery stores into two minutes. Each transaction within that 5-minute window gets grouped together.<br>
+Tone is building on this melody: CGEGEDC<br>
+Instrumentation depends on the type of purchase that customer made:<br>
+Gas purchases are a low rumble, like an engine passing by<br>
+Non-alcoholic drinks are flutes<br>
+Alcoholic drinks are bassoon<br>
+Vapes & cigarettes are trombones<br>
+Snacks are the piano<br>
+Lottery tickets are the glockenspiel<br>
+Other items (cashing checks, electronics) are a harp<br>
+Volume comes from the size of the purchase. We standardized each category, as snacks purchases are consistently smaller than, say, filling a gas tank.<br>
+        Thanks to <br>
+____ of MurphyUSA for giving me access to their sales data.<br>
+J. Hathaway, BYU-I data science faculty, for mentoring and support through the project<br>
+Rainbow Dreamer, creator of the musicpy package.<br>
+Ryan Terry, clarinetist and composer, for inspiring me to stick with music.<br>
+Marc Evanstein, music programmer, for inspiring this blend of music and tech.<br>
+
       </p>
       <p>Images for the Home page</p>
         <img src="#" alt="image for homepage">
         <img src="#" alt="image for homepage">
 
       </ul>
-      <h3>[Page 2]</h3>
+      <h3>The Music</h3>
       <p>
-        [Written copy for the Page 2 here]
+        
+        
+        from musicpy import *
+rhythm1 = rhythm('b b b - b b b - b b b - b - b -', 2)
+chord1 = chord('C5, D5, E5, E5, F5, G5, E5, D5, C5, A5, G5').apply_rhythm(rhythm1)
+play(chord1,bpm=100,instrument=11)
+Here’s the basic syntax for melodies: + Create a rhythm. b means a beat, and a - means sustain. A half note would be b - + Create a melody. The letter is the note name, and the number is the octave. Middle C is C4 + Apply the rhythm to the melody. Each b will correspond to the next note in the melody. + Put that chord/rhythm combo in a play() function, along with the tempo and the instrument you want to use.
+As we go along, we’ll include more instruments and more complex versions.
+String Manipulation
+One unique way to use measurements of distance in a dataset can be through sound. Long sounds (and long pauses) can demonstrate the different distances. Here, we’ll use a dataset of apartment complexes on BYU-Idaho apartments and their distances to campus.
+The note name we use comes from the letters in the apartment name
+The rhythm (note length) comes from the number of minutes it takes to walk from that apartment to campus
+At the moment, the best way to do this is by creating one giant string. Here, we use a for loop to cycle through each row, adding an apartment’s music information to the end
+
+
+
       </p>
       <p>Images for the Page 2</p>
         <img src="#" alt="image for page">
         <img src="#" alt="image for page">
 
       </ul>
-      <h3>[Page 3]</h3>
+      <h3>About Data Sonification</h3>
       <p>
-        [Written copy for the Page 3 here]
+        What is Data Sonification?<br>
+In data visualizations, we turn a database of entries into a picture, tying specific heights, colors, or shapes to attributes and columns of the data (big numbers become tall bars, etc.). In data sonification, we can tie those same columns to aspects of music, such as volume, tempo, pitch, and instrumentation.
+<br>
+Why Data Sonification?<br>
+Data visualizations, infographics, and comprehensive charts are popular right now because they express complicated ideas in simple, engaging ways. However, our bodies collect and process information in so many ways, not just through eyes. Many species around the world rely on scent, hearing and touch to navigate spaces, and we live in a digital world that uses almost exclusively vision.
+<br>
+How Does it Work?<br>
+We’ve used the musicpy package in Python, which can match text strings of beats and note names into sound files. As we grab column, we can rewrite them in the syntax of musicpy then mix the results all together into a single music arrangement.
+
       </p>
       <p>Images for the Page 3</p>
         <img src="#" alt="image for page3">
