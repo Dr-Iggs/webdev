@@ -31,7 +31,7 @@ nav a:hover {
 */
 
 body {
-    background-color: #E0FBFC; 
+    background-color: #F1F1F1;
      /* quotes around multi-word fonts*/
     font-size: 22px; /* applies to basically all text */
     margin: 0; /*removes all edge filler, we'll customize it by section later*/
@@ -194,8 +194,8 @@ h2 {
 
 
 footer {
-    background-color: #EE6C4D;
-    color: #E0FBFC;
+    background-color: #235BA8;
+    color: #F1F1F1;
     padding: 25px 50px;
     display: flex;
     justify-content: space-around;
@@ -203,11 +203,11 @@ footer {
 }
 
 footer a {
-    color: #E0FBFC;
+    color: #F1F1F1;
     text-decoration: none;
 }
 footer a:hover {
-    color: #3D5A80;
+    color: #235BA8; 
 }
 
 footer p{
