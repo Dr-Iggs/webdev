@@ -12,7 +12,7 @@
 body {
     background-color: #E0FBFC; 
     font-family: Overpass, Helvetica, sans-serif; /* quotes around multi-word fonts*/
-    font-size: 22px; /* applies to basically all text */
+    font-size: 18px; /* applies to basically all text */
     margin: 0; /*removes all edge filler, we'll customize it by section later*/
     padding: 0;
 }

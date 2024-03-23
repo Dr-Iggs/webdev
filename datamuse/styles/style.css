@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+header {
+    background-color: #235BA8;
+    font-family: Antonio, Georgia, serif;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-align: center;
+    color: #F1F1F1;
+    text-decoration: none;
+    padding:35px;
+}
+nav a:hover {
+    background-color: #DF2027;
+    color: #F1F1F1;
+}
+
+/* Old header:
+
+            <a id="logo_link" href="index.html">
+                <img src="images/raftlogo.png" class="logo" alt="Put Logo here">
+            </a> 
+*/
+
+body {
+    background-color: #E0FBFC; 
+     /* quotes around multi-word fonts*/
+    font-size: 22px; /* applies to basically all text */
+    margin: 0; /*removes all edge filler, we'll customize it by section later*/
+    padding: 0;
+}
+
+ h1 {
+    font-family: Lilita One, Helvetica, sans-serif;
+    font-size: 50;
+ }
+ 
+h2 {
+    font-family: Lilita One, Helvetica, sans-serif;
+    font-size:25
+}
+
+ h4 {
+    font-family: Lilita One, Helvetica, sans-serif;
+ }
+
+/* Index Specifically*/
+
+#top {
+    text-align: center;
+}
+
+#top img{
+    max-width: 100%
+}
+
+.breakdown-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px 50px;
+}
+#breakdown-title {
+    grid-column: 1/5;
+    text-align: center;
+}
+#breakdown-sounds {
+    grid-column: 1/3;
+}
+#breakdown-other {
+    grid-column: 3/5;
+}
+.thanks {
+    padding: 10px 15%;
+}
+.thanks h4 {
+    text-align: center;
+}
+
+/* Sonification Specifically */
+.sonic-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px 10%;
+}
+#data-title {
+    grid-column: 1/4;
+    grid-row:1/2;
+    text-align: center;
+}
+.what-data {
+    grid-column: 1/3;
+    grid-row:2/3;
+    padding:  10px 35px;
+}
+.why-data {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    padding:  20px 35px;
+}
+.how-data {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    padding:  20px 35px;
+}
+.further-resources {
+    grid-column: 1/4;
+    grid-row: 5/6;
+    margin-top: 80px;
+}
+.further-resources h4{
+    text-align: center;
+}
+.ear-pic{
+    grid-column: 3/4;
+    grid-row:2/3;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.bat-pic {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.python-pic{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    padding:  35px;
+}
+
+/* Musicpy Specifically */
+
+.musicpy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    padding: 100px;
+}
+.musicpy-title {
+    grid-column: 1/4;
+    grid-row:1/2;
+    text-align: center;
+}
+.abt-musicpy {
+    grid-column: 1/3;
+    grid-row:2/3;
+    padding:  35px;
+}
+.abt-murphy {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    padding:  35px;
+}
+.abt-combining {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    padding:  35px;
+}
+.final-data {
+    grid-column: 1/4;
+    grid-row: 7/8;
+    padding: 80px;
+}
+.final-data p{
+    text-align: center;
+}
+.data-pic{
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.musicpy-pic{
+    grid-column: 3/4;
+    grid-row:2/3;
+    box-shadow: 5px 5px 10px #6f7364;
+    /* padding with shadow looks silly */
+}
+.murphy-pic {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding:  35px;
+}
+.combine-pic{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+/* FOOTER ---------------------- */
+
+
+footer {
+    background-color: #EE6C4D;
+    color: #E0FBFC;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    color: #E0FBFC;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #3D5A80;
+}
+
+footer p{
+    font-size: 1.2em;
+}
+
+footer p:hover {
+    text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
