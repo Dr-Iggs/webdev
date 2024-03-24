@@ -11,6 +11,9 @@ nav {
     display: flex;
     justify-content: space-around;
 }
+header img {
+    margin: 10px 20px;
+}
 
 nav a {
     text-align: center;
@@ -207,7 +210,7 @@ footer a {
     text-decoration: none;
 }
 footer a:hover {
-    color: #235BA8; 
+    color: #DF2027; 
 }
 
 footer p{
